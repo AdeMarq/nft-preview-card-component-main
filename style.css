@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    min-width: 100vw;
+    min-height: 100vh;
+    font-family: 'Outfit', sans-serif;
+    display: grid;
+    place-content: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color:  hsl(217, 54%, 11%);
+    background-repeat: no-repeat;
+    
+}
+.wrapper {
+    background-color:hsl(216, 50%, 16%);
+    padding: 1.6rem;
+    border-radius: 15px;
+    width: 370px;
+    box-shadow: 2px 18px 5px 9px rgba(0,0,0,0.1);
+    position: relative;
+}
+.wrapper .hero-image {
+    position: relative;
+}
+
+.hero-image img {
+    max-width: 320px;
+    height: 320px;
+    border-radius: 9px;
+}
+.overlay {
+    position: absolute;
+    background-color: hsl(178, 100%, 50%);
+    max-width: 100%;
+    width:320px;
+    height: 320px;
+    display: grid;
+    place-content: center;
+    top: 25px;
+    border-radius:9px;
+    opacity: 65%;
+}
+
+.hero-image .overlay:hover {
+    cursor: pointer;
+}
+
+.card-info {
+    margin-top: 1.1rem;
+}
+.card-info h2 {
+    font-weight: 600;
+    color:white;
+    font-size: 1.5rem;
+}
+.card-info h2:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.card-info p {
+    margin-top: 1.3rem;
+    font-size: 1.185rem;
+    color:  hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+.card-middle {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.3rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    padding-bottom: 1.5rem;
+}
+.card-middle .left {
+   align-items: center;
+   display: flex;
+   gap: 0.5rem;
+}
+.card-middle .left p {
+    font-weight: 600;
+    color: hsl(178, 100%, 50%);
+}
+.card-middle .right {
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+}
+.card-middle .right p {
+    font-weight: 400;
+    color:  hsl(215, 51%, 70%);
+}
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.profile p {
+    color:  hsl(215, 51%, 70%);
+}
+.profile span {
+    margin-left: 0.5rem;
+    font-weight: 500;
+    color: white;
+}
+.profile span:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.profile img {
+    height: 45px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
